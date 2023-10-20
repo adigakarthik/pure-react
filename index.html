@@ -9,21 +9,6 @@
     <div id="root">React is not rendered</div>
     <script src="https://unpkg.com/react@18.0.0-rc.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18.0.0-rc.0/umd/react-dom.development.js"></script>
-    <script>
-      const Person = (props) =>{
-        return React.createElement('div',{},[
-          React.createElement('h1',{},props.name),
-          React.createElement('p',{},props.occupation),
-        ]);
-      }
-      const App = () => {
-        return React.createElement("div", {}, [
-          React.createElement("h1", { className: "title" },"React Is Rendered"),
-          React.createElement(Person,{name: 'Krishna Devaraya', occupation:'King'}),
-          React.createElement(Person,{name: 'Tenali Ramakrishna', occupation:'Wise Minister'}),
-        ]);
-      };
-      ReactDOM.render(React.createElement(App), document.getElementById("root"))
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
